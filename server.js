@@ -16,7 +16,7 @@ app.use(express.json());
 // CORS Middleware
 app.use((req, res, next) => {
   // Set allowed origin for CORS
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin", "https://cred-app-p-u.vercel.app/");
   res.setHeader(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
