@@ -14,19 +14,19 @@ mongoDB();
 app.use(express.json());
 
 // CORS Middleware
-app.use((req, res, next) => {
-  // Set allowed origin for CORS
-  res.setHeader("Access-Control-Allow-Origin", "https://cred-app-p-u.vercel.app/");
-  res.setHeader(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, PATCH");
-  next();
-});
+// app.use((req, res, next) => {
+//   // Set allowed origin for CORS
+//   res.setHeader("Access-Control-Allow-Origin", "https://cred-app-p-u.vercel.app/");
+//   res.setHeader(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, PATCH");
+//   next();
+// });
 
-// const cors = require("cors");
-// app.use(cors());
+const cors = require("cors");
+app.use(cors());
 
 
 //Router
